@@ -89,7 +89,8 @@ h2 {
 
 
 .imgContour,
-.fieldContour {
+.fieldContour,
+.fieldContourSkill {
     background-color: var(--contourBackground);
     padding: 1vw;
     border-radius: 1vw;
@@ -111,17 +112,26 @@ img {
 .textField {
     white-space: pre-line;
     font-size: 2.5vw;
+    
 }
 
 .skillText {
     font-size: 2vw;
+    
 }
 
 .textSubjectTitle,
-.textSubjectTitleSkill {
+.skillTitle {
     margin-top: 1vw;
     font-size: 5vw;
     font-weight: 600;
+}
+
+.skillTitle {
+    
+    font-size: 4vw;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .fieldContour,
@@ -165,6 +175,7 @@ img {
     background-color: var(--imageBg);
 
     width: 88vw;
+    height: 72vh;
     gap: 1rem;
 }
 
@@ -182,18 +193,21 @@ img {
 
 .nameFormular,
 .emailFormular {
+    background-color: var(--background);
     height: 5vw;
     width: 45vw;
     text-align: center;
 }
 
 .messageFormular {
+    background-color: var(--background);
     height: 15vw;
     width: 45vw;
     text-align: center;
 }
 
 .submit {
+    background-color: var(--background);
     height: 30px;
     width: 150px;
 }
@@ -208,7 +222,7 @@ img {
     .contentSkills {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
 
         align-items: center;
         justify-items: center;
@@ -221,5 +235,45 @@ img {
     .fieldContourSkill {
         width: 80vw;
 
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(5, auto) 1fr;
+        width: 100%;
+
+        background-color: var(--navBackground);
+        box-sizing: border-box;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .headLink,
+    .headLinkChosen {
+
+        height: 30px;
+        width: 12vw;
+
+    }
+
+    .nameFormular,
+    .emailFormular {
+        background-color: var(--background);
+        height: 5vw;
+        width: 60vw;
+        text-align: center;
+    }
+
+    .messageFormular {
+
+        height: 30vh;
+        width: 60vw;
+
+    }
+
+    .contactFormular {
+     
+        width: 100vw;
+        height: 60vh;
     }
 }
