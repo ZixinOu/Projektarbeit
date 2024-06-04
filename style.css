@@ -1,0 +1,225 @@
+:root {
+    --background: #ACE3DB;
+    --headLinkBackground: #7DE2D1;
+    --headLinkChosenBackground: #339989;
+    --navBackground: white;
+    --contourBackground: white;
+
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, auto) 1fr;
+    width: 100%;
+    background-color: var(--navBackground);
+    box-sizing: border-box;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.headLink,
+.headLinkChosen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 15px;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 0.5vw;
+
+    color: var(--headerFg);
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.headLink {
+    background-color: var(--headLinkBackground);
+}
+
+.headLinkChosen {
+    background-color: var(--headLinkChosenBackground);
+}
+
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6vw;
+
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 3vw;
+
+}
+
+.content,
+.contentMain,
+.contentAboutMe,
+.contentSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.contentMain {
+    grid-template-rows: 1fr;
+}
+
+.contentAboutMe {
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.imgContour,
+.fieldContour {
+    background-color: var(--contourBackground);
+    padding: 1vw;
+    border-radius: 1vw;
+    margin-top: 4vw;
+}
+
+img {
+    border-radius: 1vw;
+}
+
+.imgMainPage,
+.fieldContour,
+.textField,
+.fieldContourSkill {
+    width: 40vw;
+
+}
+
+.textField {
+    white-space: pre-line;
+    font-size: 2.5vw;
+}
+
+.skillText {
+    font-size: 2vw;
+}
+
+.textSubjectTitle,
+.textSubjectTitleSkill {
+    margin-top: 1vw;
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+.fieldContour,
+.fieldContourSkill {
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-align: center;
+
+    height: 8vw;
+}
+
+.fieldContourSkill {
+    height: 5vw;
+}
+
+.textSubjectTitleSkill {
+    margin-top: 2vw;
+}
+
+.contactTextContainer {
+    background-color: var(--contourBackground);
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    margin-top: 3vw;
+
+}
+
+.contactFormular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 15px;
+    margin-top: 5vh;
+    margin-right: 6vw;
+    margin-left: 6vw;
+
+    background-color: var(--imageBg);
+
+    width: 88vw;
+    gap: 1rem;
+}
+
+
+
+.contactFormularForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 5vh;
+
+    gap: 1rem;
+}
+
+.nameFormular,
+.emailFormular {
+    height: 5vw;
+    width: 45vw;
+    text-align: center;
+}
+
+.messageFormular {
+    height: 15vw;
+    width: 45vw;
+    text-align: center;
+}
+
+.submit {
+    height: 30px;
+    width: 150px;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .content,
+    .contentMain,
+    .contentAboutMe,
+    .contentSkills {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        align-items: center;
+        justify-items: center;
+    }
+
+
+    .imgMainPage,
+    .fieldContour,
+    .textField,
+    .fieldContourSkill {
+        width: 80vw;
+
+    }
+}
